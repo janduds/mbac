@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Multiple Before After Effect Demo</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../mbac.css"/>
+        <style>
+            html,body {
+                font-family: "Work Sans", "Open Sans", sans-serif;
+            }
+            .container {
+                width: 690px;
+                margin: 20px auto;
+            }
+            h3 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Multiple Before After Compare (MBAC)</h3>
+            <p><b>Hover</b> to each images to compare them. <i>Usefull for multiple before and after images.</i></p>
+            <div class="mbac-wrap">
+                <ul class="mbac">
+                    <li><img src="images/exposure_1.jpg" alt="Exposure 1"></li>
+                    <li><img src="images/exposure_2.jpg" alt="Exposure 2"></li>
+                    <li><img src="images/exposure_3.jpg" alt="Exposure 3"></li>
+                    <li><img src="images/hdr_image.jpg" alt="Final Image"></li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+        <script src="../mbac-1.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.mbac-wrap').mbac({
+                    width: 690,
+                    height: 460
+                }); 
+            });
+        </script>
+    </body>
+</html>

@@ -10,23 +10,17 @@ and open the template in the editor.
 
 .mbac {
     position: relative;
-    &.responsive {
-        .mbac-slide {
-            position: relative;
-            img {
-                display: block;
-            }
-        }
-    }
-    .mbac-slide {
-        top: 0;
-        left: 0;
-        position: absolute;
-        overflow: hidden;
-        z-index: 50;
-        transition: all .3s ease;
-        img {
-            height: auto
-        }
-    }
+}
+
+.mbac .mbac-slide {
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: 50;
+    transition: all .3s ease;
+}
+
+.mbac .mbac-slide img {
+    height: auto;
 }
